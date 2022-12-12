@@ -168,7 +168,7 @@ const Home = () => (
 
         <SimpleGrid columns={[1, null, 2]} gap={6} paddingTop={[4,8]}>
           <GridonItem
-            href="https://drive.google.com/file/d/18049-CbI40h0UqfOZ1B2dKfTKNfOYkIV/view?usp=sharing"
+            href="https://drive.google.com/file/d/1VsCBpIQMnBdyvfXV4FKqypjfX_IXn1JU/view?usp=sharing"
             title="My Curriculum Vitae"
             thumbnail={rickiCv}
           />
