@@ -1,29 +1,24 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem
-} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
+import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
+import P from '../../components/paragraph'
+import { Meta, Title, WorkImage } from '../../components/work'
 
 const Work = () => (
-  <Layout title="Inkdrop">
-    <Container paddingTop={[4,8]}>
+  <Layout title="Sumatera Kalimantan Jaya">
+    <Container paddingTop={[4, 8]}>
       <Title>
         Sumatera Kalimantan Jaya <Badge>2021</Badge>
       </Title>
       <P>
-      Make a Designed and implemented a Profile Company website. Implemented MPOS application to regulate the sale and stock of the company products.
+        Make a Designed and implemented a Profile Company website. Implemented
+        MPOS application to regulate the sale and stock of the company products.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
           <Link href="https://sumaterakalimantanjaya.com" target="_blank">
-          https://sumaterakalimantanjaya.com <ExternalLinkIcon mx="2px" />
+            https://sumaterakalimantanjaya.com <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>

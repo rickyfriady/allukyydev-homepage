@@ -9,7 +9,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="Repository SI Unri">
     <Container paddingTop={[4,8]}>
       <Title>
       Repository SI Universitas Riau <Badge>2019</Badge>

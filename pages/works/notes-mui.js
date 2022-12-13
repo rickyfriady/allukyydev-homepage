@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import { Meta, Title, WorkImage } from '../../components/work'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="Notes React App">
     <Container paddingTop={[4, 8]}>
       <Title>
         Notes React App <Badge>2022</Badge>
