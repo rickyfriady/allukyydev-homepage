@@ -1,6 +1,6 @@
 # Ricki Friadi Homepage
 
-[https://www.allukyy.apesdev.site/](https://www.allukyy.apesdev.site/)
+[https://www.rickyfrdy.site/](https://www.rickyfrdy.site/)
 
 ## Stack
 
@@ -19,8 +19,6 @@ $PROJECT_ROOT
 │   # React component files
 ├── components
 │   # Non-react modules
-├── lib
-│   # Static files for images and 3d model file
 └── public
 ```
 
@@ -30,8 +28,7 @@ MIT License.
 
 You can create your own homepage for free without notifying me by forking this project under the following conditions:
 
-- Add a link to [my homepage](https://www.allukyy.apesdev.site/)
-- Do not use the 3d voxel dog
+- Add a link to [my homepage](https://www.rickyfrdy.site/)
 
 Check out [LICENSE](./LICENSE) for more detail.
 
