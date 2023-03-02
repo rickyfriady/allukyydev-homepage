@@ -4,10 +4,11 @@ import Hero from '../components/hero'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
-import thumbMahacare from '../public/images/works/mahacare-pic1.png'
-import thumbNotes from '../public/images/works/note-react-mui.png'
 import thumbRepounri from '../public/images/works/Repository-Skripsi-1.png'
 import thumbKashima from '../public/images/works/Sistem-Keuangan-Kas-Himalkom.png'
+import thumbMahacare from '../public/images/works/mahacare-pic1.png'
+import thumbNotes from '../public/images/works/note-react-mui.png'
+import thumbShopReact from '../public/images/works/shoppingcart-react-ts.webp'
 import thumbSumakali from '../public/images/works/sumakali-pic1.png'
 
 const Works = () => (
@@ -79,6 +80,16 @@ const Works = () => (
           <WorkGridItem id="notes-mui" title="Notes App" thumbnail={thumbNotes}>
             Create a Note app with web and mobile responsive design with react
             js as a core framework
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.7}>
+          <WorkGridItem
+            id="shopping-ts"
+            title="Shopping React App"
+            thumbnail={thumbShopReact}
+          >
+            Create a Shopping Cart App with web and mobile responsive design
+            with react js as a core framework
           </WorkGridItem>
         </Section>
       </SimpleGrid>

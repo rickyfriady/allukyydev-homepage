@@ -11,17 +11,23 @@ import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
 import { Meta, Title, WorkImage } from '../../components/work'
 
-const Work = () => (
-  <Layout title="Notes React App">
+const ShoppingTs = () => (
+  <Layout title=" Shopping Cart React App">
     <Container paddingTop={[4, 8]}>
       <Title>
-        Notes React App <Badge>2022</Badge>
+        Shopping Cart React App <Badge>2023</Badge>
       </Title>
-      <P>Make a Note App with React js and ui framework with Material UI</P>
+      <P>
+        Make a Shopping Cart App with React Typescript and ui framework with
+        Tailwind
+      </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://notes-react-mui.vercel.app/" target="_blank">
+          <Link
+            href="https://shoppingcart-react-ts.vercel.app/"
+            target="_blank"
+          >
             https://notes-react-mui.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -31,20 +37,21 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>
-            React js, Material Ui, Styled-componnets, Node js, Firebase{' '}
-          </span>
+          <span>React Typescript + vite, Tailwind, Node js,</span>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/note-react-mui.png" alt="note-react-mui1" />
+      <WorkImage
+        src="/images/works/shoppingcart-react-ts-4.webp"
+        alt="note-react-mui1"
+      />
       <SimpleGrid columns={2} gap={2}>
         <WorkImage
-          src="/images/works/note-react-mui2.png"
+          src="/images/works/shoppingcart-react-ts-2.png"
           alt="note-react-mui2"
         />
         <WorkImage
-          src="/images/works/note-react-mui3.png"
+          src="/images/works/shoppingcart-react-ts-3.png"
           alt="note-react-mui2"
         />
       </SimpleGrid>
@@ -52,5 +59,5 @@ const Work = () => (
   </Layout>
 )
 
-export default Work
+export default ShoppingTs
 export { getServerSideProps } from '../../components/chakra'

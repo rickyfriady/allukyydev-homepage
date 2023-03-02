@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
+import Head from 'next/head'
 import Footer from '../footer'
+import NavBar from '../navbar'
 
 const Main = ({ children, router }) => {
   return (
@@ -22,11 +22,8 @@ const Main = ({ children, router }) => {
         <meta property="og:type" content="website" />
         <title>Ricki Friadi - Homepage</title>
       </Head>
-
       <NavBar path={router.asPath} />
-
-      <Container maxW='container.md' pt={14}>
-
+      <Container maxW="container.md" pt={14}>
         {children}
 
         <Footer />

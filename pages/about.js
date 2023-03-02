@@ -9,7 +9,6 @@ import SkillAndroid from "../components/skillandroid";
 
 
 
-
 const About = () => (
   <Layout title="About Me">
   <Container maxW='container.full'>
