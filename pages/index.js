@@ -1,38 +1,42 @@
-import NextLink from 'next/link'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
+  Box,
+  Button,
+  Container,
   Grid,
   GridItem,
-  Link,
-  Container,
   Heading,
-  Box,
+  Link,
   SimpleGrid,
-  Button,
-  useColorModeValue,
-  chakra
+  chakra,
+  useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridonItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub,IoLogoLinkedin,IoMailOutline } from 'react-icons/io5'
-import rickiCv from "../public/images/links/ricki-cv.jpg";
 import Image from 'next/image'
+import NextLink from 'next/link'
+import {
+  IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoTwitter,
+  IoMailOutline
+} from 'react-icons/io5'
 import TypedText from '../components/TypedText'
+import { BioSection, BioYear } from '../components/bio'
+import { GridonItem } from '../components/grid-item'
+import Layout from '../components/layouts/article'
+import Paragraph from '../components/paragraph'
+import Section from '../components/section'
+import rickiCv from '../public/images/links/ricki-cv.jpg'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-
 const Home = () => (
   <Layout>
-    <Container maxW='container.md'>
-
-      <Box display={{ md: 'flex' }} py='8' >
-        <Box flexGrow={1} >
+    <Container maxW="container.md">
+      <Box display={{ md: 'flex' }} py="8">
+        <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Ricki Friadi
           </Heading>
@@ -55,12 +59,12 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/rickifriadi.jpg"
+              src="/images/ricki-friadi.jpg"
               alt="Profile image"
               borderRadius="full"
-              width='200%'
-              height='200%'
-              objectFit='cover'
+              width="200%"
+              height="200%"
+              objectFit="cover"
             />
           </Box>
         </Box>
@@ -72,20 +76,25 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
-      >          
-            <TypedText/>
-        
+      >
+        <TypedText />
       </Box>
-</Container>
+    </Container>
 
-<Container  maxW='container.sm'>
-
+    <Container maxW="container.sm">
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Summary
         </Heading>
         <Paragraph>
-        I&apos;m a software developer with very passionate about technology and computers. Graduated with a Bachelors Degree of Information System Major at Universitas Riau. I am reliable, can work in a team, and can learn quickly my interests are in frontend development or backend development. In my free time, I enjoy music, gaming, and reading. As well, I love to travel and see new places and meet new people.{' '}
+          I&apos;m a full-stack wizard with a knack for making web applications
+          that are as magical as they are functional. With ReactJS, NodeJS,
+          ExpressJS, MySQL, and MongoDB, I&apos;m like Merlin conjuring up
+          powerful spells. Let&apos;s join forces and create web applications
+          that will leave people spellbound! My ability to think outside the box
+          and collaborate with others makes me a valuable asset to any project.
+          Let&apos;s work our magic together and create web applications that
+          will dazzle the world!
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -106,7 +115,8 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Completed the Bachelor&apos;s Degree in the Graduate of Information System Major at Universitas Riau with a 3.69 GPA
+          Completed the Bachelor&apos;s Degree in the Graduate of Information
+          System Major at Universitas Riau with a 3.69 GPA
         </BioSection>
         <BioSection>
           <BioYear>2021 to present</BioYear>
@@ -118,9 +128,14 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Sosial Media
         </Heading>
-        <Grid textAlign="center" templateColumns='repeat(2, 1fr)' gap={2} paddingBottom={6}>
-          <GridItem  h='10'>
-          <Link href="https://github.com/rickyfriady" target="_blank">
+        <Grid
+          textAlign="center"
+          templateColumns="repeat(2, 1fr)"
+          gap={2}
+          paddingBottom={6}
+        >
+          <GridItem h="10">
+            <Link href="https://github.com/rickyfriady" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -130,8 +145,8 @@ const Home = () => (
               </Button>
             </Link>
           </GridItem>
-          <GridItem  h='10'>
-          <Link href="https://twitter.com/allukyyDev_" target="_blank">
+          <GridItem h="10">
+            <Link href="https://twitter.com/allukyyDev_" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -141,8 +156,8 @@ const Home = () => (
               </Button>
             </Link>
           </GridItem>
-          <GridItem  h='10'>
-          <Link href="https://instagram.com/rickyfrdy" target="_blank">
+          <GridItem h="10">
+            <Link href="https://instagram.com/rickyfrdy" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -152,8 +167,11 @@ const Home = () => (
               </Button>
             </Link>
           </GridItem>
-          <GridItem  h='10'>
-          <Link href="https://www.linkedin.com/in/rickifriadi/" target="_blank">
+          <GridItem h="10">
+            <Link
+              href="https://www.linkedin.com/in/rickifriadi/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -165,8 +183,7 @@ const Home = () => (
           </GridItem>
         </Grid>
 
-
-        <SimpleGrid columns={[1, null, 2]} gap={6} paddingTop={[4,8]}>
+        <SimpleGrid columns={[1, null, 2]} gap={6} paddingTop={[4, 8]}>
           <GridonItem
             href="https://drive.google.com/file/d/1VsCBpIQMnBdyvfXV4FKqypjfX_IXn1JU/view?usp=sharing"
             title="My Curriculum Vitae"
@@ -175,10 +192,16 @@ const Home = () => (
         </SimpleGrid>
 
         <Box align="center" my={4}>
-          <NextLink href="mailto:friadi.ricki@gmail.com" passHref scroll={false}>
-            <Button variant="ghost"
-        colorScheme="teal"
-        leftIcon={<IoMailOutline/>}>
+          <NextLink
+            href="mailto:friadi.ricki@gmail.com"
+            passHref
+            scroll={false}
+          >
+            <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<IoMailOutline />}
+            >
               Contact Me
             </Button>
           </NextLink>
