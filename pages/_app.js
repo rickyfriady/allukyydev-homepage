@@ -1,7 +1,8 @@
-import Layout from '../components/layouts/main'
-import Fonts from '../components/fonts'
+import { Analytics } from '@vercel/analytics/react'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
+import Fonts from '../components/fonts'
+import Layout from '../components/layouts/main'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
@@ -22,6 +23,7 @@ function Website({ Component, pageProps, router }) {
           }}
         >
           <Component {...pageProps} key={router.route} />
+          <Analytics />
         </AnimatePresence>
       </Layout>
     </Chakra>
