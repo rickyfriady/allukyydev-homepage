@@ -116,11 +116,15 @@ const Home = () => (
         <BioSection>
           <BioYear>2020</BioYear>
           Completed the Bachelor&apos;s Degree in the Graduate of Information
-          System Major at Universitas Riau with a 3.69 GPA
+          System Major at Universitas Riau with a 3.69 GPA.
         </BioSection>
         <BioSection>
-          <BioYear>2021 to present</BioYear>
-          Working as a freelancer
+          <BioYear>Sep 2019 to Jan 2023</BioYear>
+          Working as a freelancer.
+        </BioSection>
+        <BioSection>
+          <BioYear>Mei 2023 to present</BioYear>
+          Working as a Fullstack Developer at Pegadaian.
         </BioSection>
       </Section>
 
@@ -146,18 +150,18 @@ const Home = () => (
             </Link>
           </GridItem>
           <GridItem h="10">
-            <Link href="https://twitter.com/allukyyDev_" target="_blank">
+            <Link href="https://twitter.com/rickyfrdy" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @allukyyDev_
+                @rickyfrdy
               </Button>
             </Link>
           </GridItem>
           <GridItem h="10">
-            <Link href="https://instagram.com/rickyfrdy" target="_blank">
+            <Link href="https://instagram.com/rickyfrdy.dev" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -185,7 +189,7 @@ const Home = () => (
 
         <SimpleGrid columns={[1, null, 2]} gap={6} paddingTop={[4, 8]}>
           <GridonItem
-            href="https://drive.google.com/file/d/1VsCBpIQMnBdyvfXV4FKqypjfX_IXn1JU/view?usp=sharing"
+            href="https://drive.google.com/file/d/1pCNqBocVgVbmpZOL6fepvKKL1pQkegci/view?usp=drive_link"
             title="My Curriculum Vitae"
             thumbnail={rickiCv}
           />
