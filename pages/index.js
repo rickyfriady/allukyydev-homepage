@@ -119,7 +119,7 @@ const Home = () => (
           System Major at Universitas Riau with a 3.69 GPA.
         </BioSection>
         <BioSection>
-          <BioYear>Sep 2019 to Jan 2023</BioYear>
+          <BioYear>Sep 2019 - Jan 2023</BioYear>
           Working as a freelancer.
         </BioSection>
         <BioSection>
@@ -167,7 +167,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @rickyfrdy
+                @rickyfrdy.dev
               </Button>
             </Link>
           </GridItem>
@@ -189,7 +189,7 @@ const Home = () => (
 
         <SimpleGrid columns={[1, null, 2]} gap={6} paddingTop={[4, 8]}>
           <GridonItem
-            href="https://drive.google.com/file/d/1pCNqBocVgVbmpZOL6fepvKKL1pQkegci/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1_gGCTK_EPnKb1NGPy8pkct4CmQ6rmzcf/view?usp=drive_link"
             title="My Curriculum Vitae"
             thumbnail={rickiCv}
           />
